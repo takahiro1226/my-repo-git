@@ -1,9 +1,10 @@
-name: Hello # ワーク フロー 名 
-on: push # イベント（ プッシュ 時 に 起動） 
-jobs: # ジョブ の 定義 
-hello: # ジョブ ID 
-runs-on: ubuntu-latest # ランナー（ Ubuntu で 実行） 
-steps: # ステップ の 定義 
-- run: echo "Hello, world" # シェル コマンド の 実行 
-- uses: actions/checkout@v4 # アクション の 呼び出し
+name: Hello  # ワークフロー名
+on: push  # イベント（プッシュ時に起動）
+jobs:  # ジョブの定義
+  hello:  # ジョブID
+    runs-on: ubuntu-latest  # ランナー（Ubuntuで実行）
+    steps:  # ステップの定義
+      - run: echo "Hello, world"  # シェルコマンドの実行
+      - uses: actions/checkout@v4  # アクションの呼び出し
+
 
